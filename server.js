@@ -14,9 +14,7 @@ app.use(session({
 }))
 require('./server/config/mongoose.js')
 require('./server/models/user.js')
-mongoose.model('User');
-mongoose.model('Video')
-mongoose.model('Season')
+
 mongoose.Promise = global.Promise;
 var path = require('path')
 app.use(express.static(path.join(__dirname, '/public/dist/public')));

@@ -17,7 +17,7 @@ import { Title } from '@angular/platform-browser';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = "Myriathon";
+  title = "RC";
   navbarOpen = false;
   hamburgerOpen = false;
   session: any;
@@ -34,9 +34,7 @@ export class AppComponent {
 */
 
   ngOnInit() {
-    this.setTitle("Myriathon | Home");
-    this.checkSession();
-    this.checkAdmin();
+    this.setTitle("RC | Home");
     this.receiveMessage(this.session);
   } 
 
@@ -60,41 +58,10 @@ export class AppComponent {
     this.hamburgerOpen = !this.hamburgerOpen;
   }
 
-  /* This will check the user's session information.  If session is null from server, nothing will happen.  If session is available, then it'll store */
-
-  checkSession() {
-    let observable = this._httpService.checkSession();
-    observable.subscribe(data => {
-      this.session = data['user']
-      this._httpService.send(this.session)
-    })
-  }
-
-  /* This will check the session's data from the server, and if the data returned has the user admin equal to true, Angular will store admin as the user. */
-
-  checkAdmin() {
-    let observable = this._httpService.checkAdmin();
-    observable.subscribe(data => {
-      this.admin = data['user']
-    })
-  }
-
   /* This is for passing session data accross the angular components */
 
   receiveMessage(session) {
     this.session = session;
-  }
-
-  /* Logout function from Angular */
-
-  logout() {
-    let observable = this._httpService.logout();
-    observable.subscribe(data => {
-      this.checkSession();
-      this.admin = false;
-      this._httpService.send(this.session)
-      location.reload();
-    })
   }
 
 }

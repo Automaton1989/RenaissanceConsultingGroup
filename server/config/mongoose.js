@@ -10,4 +10,4 @@ fs.readdirSync(models_path).forEach(function(file) {
     require(models_path + '/' + file);
    }
 })
-module.exports = mongoose.connect('mongodb://localhost/new_myriathon_db');
+module.exports = mongoose.connect('mongodb://localhost/new_rc_db');
