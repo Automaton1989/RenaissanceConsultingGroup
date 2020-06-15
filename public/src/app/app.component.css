@@ -25,11 +25,10 @@ a:focus {
 }
 
 .navbar {
-    padding: 15px 10px;
     background: #fff;
     border: none;
+    min-height: 57px;
     border-radius: 0;
-    margin-bottom: 10px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
@@ -182,7 +181,6 @@ a.article:hover {
 
 #content {
     width: 100%;
-    padding: 20px;
     min-height: 100vh;
     transition: all 0.3s;
     position: absolute;
@@ -192,6 +190,11 @@ a.article:hover {
 
 #sidebarNotCollapse
 {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    border-radius: 0px;
+    width: 50px;
     background-color: #2E8BFE;
     color: white;
 }
@@ -237,3 +240,7 @@ a.article:hover {
     -webkit-filter: grayscale(100%);
 }
 
+.row
+{
+    margin: 0px;
+}

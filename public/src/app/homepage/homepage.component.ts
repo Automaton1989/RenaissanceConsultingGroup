@@ -33,10 +33,10 @@ export class HomepageComponent implements OnInit {
 
   ngOnInit() 
   {
-    this.setTitle("Myriathon | Home");
-    this.checkSession();
-    this.checkAdmin();
-    this.receiveMessage(this.session);
+    this.setTitle("RC | Home");
+    //this.checkSession();
+    //this.checkAdmin();
+    //this.receiveMessage(this.session);
   }
 
   /* Set Title for document header for browser */

@@ -35,7 +35,7 @@ export class AppComponent {
 
   ngOnInit() {
     this.setTitle("RC | Home");
-    this.receiveMessage(this.session);
+    //this.receiveMessage(this.session);
   } 
 
   /* Set Title for document header for browser */

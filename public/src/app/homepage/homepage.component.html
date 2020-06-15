@@ -7,79 +7,71 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 <body>
-    <div class="container-fluid">
-        <div *ngIf = "admin" class = "row">
-            <nav id = "admin-navbar" class="navbar navbar-light bg-light">
-                <span class="navbar-brand mb-0 h1">Admin</span>
-                <ul class = "nav">
-                    <li class = "nav-item">
-                        <a class = "nav-link" [routerLink] = "['/', 'admin', 'dashboard']">Admin Dash</a>
-                    </li>
-                    <li class = "nav-item">
-                        <a class = "nav-link" [routerLink] = "['/', 'addvideo']">Add Video/Season</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        <div class="row">
-            <div align="center" class = "d-none d-sm-block" id = "image-wrapper-large">
-                <div class="d-none d-sm-block" id="homeText">
-                    <h3>Myriathon</h3>
-                    <p>View our most recent videos!</p>
-                    <a [routerLink] = "['/', 'videos']">
-                        <button class="btn">All Videos</button>
-                    </a>
-                </div>
-            </div>
-            <div align="center" class = "d-block d-sm-none" id = "image-wrapper-small">
-                <div class="d-block d-sm-none" id="homeSmallText">
-                    <h3>Myriathon</h3>
-                    <p>View our most recent videos!</p>
-                    <a [routerLink] = "['/', 'videos']">
-                        <button class="btn">All Videos</button>
-                    </a>
-                </div>
+    <div class = "row">
+        <div class="darken-pseudo d-none d-sm-block" id = "test-block-1-large">
+            <div id = "overlay-large">
+                <p class = "text-light">
+                    At Renaissance Consulting Group, we understand that change is not always easy. 
+                    Since 2000, we’ve been helping technology companies of all sizes respond to industry transitions 
+                    in order to stay competitive.
+                </p>
             </div>
         </div>
-        <hr my-4>
-        <div class = "row">
-            <div class="darken-pseudo" id = "values-wrapper">
-                <div id = "image-values-wrapper">
-                    <div align = "center" id = "values-header-block">
-                        <h3>Values</h3>
+        <div class="darken-pseudo d-block d-sm-none" id = "test-block-1-small">
+            <div id = "overlay-small">
+                <p class = "text-light">
+                    At Renaissance Consulting Group, we understand that change is not always easy. 
+                    Since 2000, we’ve been helping technology companies of all sizes respond to industry transitions 
+                    in order to stay competitive.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id = "test-block-2" class = "row">
+        <div class = "col">
+            <div class="card-deck">
+                <div class="card">
+                    <img class="card-img-top" src="https://www.exploreminnesota.com/sites/default/files/styles/share_image/public/2019-10/grand-marais-honeymoon-bluff-woman-hiking_roy-son.jpg?h=0c047d17&itok=N8GTdR1p" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     </div>
-                    <div align = "center" id = "values-content-block-first">
-                        <p>
-                            We’re the Myriathon Team! Since our foundation in 2013, we’ve raised over $25,000 for various causes around the world. 
-                            We’re here to provide family-friendly fun and entertainment while playing some of our favorite games, old and new alike!
-                        </p>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="https://www.exploreminnesota.com/sites/default/files/styles/share_image/public/2019-10/grand-marais-honeymoon-bluff-woman-hiking_roy-son.jpg?h=0c047d17&itok=N8GTdR1p" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="https://www.exploreminnesota.com/sites/default/files/styles/share_image/public/2019-10/grand-marais-honeymoon-bluff-woman-hiking_roy-son.jpg?h=0c047d17&itok=N8GTdR1p" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                     </div>
                 </div>
             </div>
         </div>
-        <hr my-4>
-        <div class = "row">
-            <div id = "impact-wrapper">
-                <div align = "center" id = "impact-header-block">
-                    <h3>Impact</h3>
-                </div>
-                <div align = "center" id = "impact-amount-block">
-                    <h3>$25,321</h3>
-                    <h5>Raised for Charity</h5>
-                </div>
-                <div align = "center" id = "impact-charities-block">
-                    <h5>Charities we've supported: </h5>
-                    <div id = "charity-logo-block">
-                        <img src = "assets/img/checkpoint.png" alt = "Checkpoint organization logo">
-                        <img src = "assets/img/The_Exodus_Road.png" alt = "Exodus Road organization logo">
-                        <img src = "assets/img/charity_water.png" alt = "Charity Water organization logo">
-                        <img src = "assets/img/extra_life.png" alt = "Extra Life organization logo">
-                        <img src = "assets/img/st_jude.png" alt = "St Jude organization logo">
-                        <img src = "assets/img/world_vision.png" alt = "World Vision organization logo">
-                        <img style = "width: 250px" src = "assets/img/direct_relief.png" alt = "Direct Relief organization logo">
-                    </div>
-                </div>
-            </div>
+    </div>
+    <div class = "row">
+        <div class = "col">
+            <div id = "test-block-3"></div>
+        </div>
+    </div>
+    <div class = "row">
+        <div class = "col">
+            <div id = "test-block-4"></div>
+        </div>
+    </div>
+    <div class = "row">
+        <div class = "col">
+            <div id = "test-block-5"></div>
+        </div>
+    </div>
+    <div class = "row">
+        <div class = "col">
+            <div id = "test-block-6"></div>
         </div>
     </div>
 </body>

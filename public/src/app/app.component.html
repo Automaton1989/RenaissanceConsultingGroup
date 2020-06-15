@@ -26,23 +26,15 @@
             <a [routerLink] = "['home']">Home</a>
         </li>
 
-        <!--
-
         <li [routerLinkActive] = "['active']">
-            <a [routerLink] = "['marathons']">Marathons</a>
-        </li>
-        <li [routerLinkActive] = "['active']">
-            <a [routerLink] = "['rmyriathon-home']">Myriathon Home</a>
-        </li>
-        <li [routerLinkActive] = "['active']">
-            <a [routerLink] = "['videos']">Videos</a>
-        </li>
-        <li [routerLinkActive] = "['active']">
-            <a [routerLink] = "['about']">About</a>
+            <a> Blog </a>
         </li>
 
+        <li [routerLinkActive] = "['active']">
+            <a> About Us </a>
+        </li>
         
-
+        <!--
         
         <li [routerLinkActive] = "['active']">
             <a [routerLink] = "['admin']">Admin</a>
@@ -79,14 +71,15 @@
                             <a class="nav-link" [routerLink] = "['home']">Home</a>
                         </li>
 
-                        <!--
-
                         <li  class="nav-item" [routerLinkActive] = "['active']">
-                            <a class="nav-link" [routerLink] = "['marathons']">Marathons</a>
+                            <a class="nav-link">Blog</a>
                         </li>
                         <li class="nav-item" [routerLinkActive] = "['active']">
-                            <a class="nav-link" [routerLink] = "['myriathon-home']">Myriathon Home</a>
+                            <a class="nav-link">About Us</a>
                         </li>
+
+                        <!--
+
                         <li class="nav-item" [routerLinkActive] = "['active']">
                             <a class="nav-link" [routerLink] = "['videos']">Videos</a>
                         </li>
@@ -108,20 +101,37 @@
             </div>
         </nav>
         <router-outlet></router-outlet>
-        <footer class = "d-flex justify-content-center footer">
-            <div id = "footer-text" class = "d-flex justify-content-center container">
-                <span class = "text-muted">Copyright 2020</span>
+        <footer class = "footer">
+            <div class = "row">
+                <div class = "text-center col-12">
+                    <h3>Renaissance Consulting Group</h3>
+                </div>
             </div>
-            <div class = "d-flex justify-content-center container">
-                <a class = "icons" href = "https://twitter.com/themyraithon" target = "_blank">
-                    <img src = "assets/img/twitter_icon.png">
-                </a>
-                <a class = "icons" href = "https://www.twitch.tv/themyriathon" target = "_blank">
-                    <img src = "assets/img/twitch_icon.png">
-                </a>
-                <a class = "icons" href = "https://discord.gg/XRFranq" target = "_blank">
-                    <img src = "assets/img/discord_icon.png">
-                </a>
+            <div class = "row">
+                <div class = "text-center col-12">
+                    <h5>info@renaissancecg.com</h5>
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "text-center col-12">
+                    <h5>Santa Clara, CA</h5>
+                </div>
+            </div>
+            <div class = "row">
+                <div id = "footer-text" class = "d-flex justify-content-center container col-6">
+                    <span class = "text-muted">Copyright 2020</span>
+                </div>
+                <div class = "d-flex justify-content-center container col-6">
+                    <a class = "icons" href = "https://twitter.com/themyraithon" target = "_blank">
+                        <img src = "assets/img/twitter_icon.png">
+                    </a>
+                    <a class = "icons" href = "https://www.twitch.tv/themyriathon" target = "_blank">
+                        <img src = "assets/img/twitch_icon.png">
+                    </a>
+                    <a class = "icons" href = "https://discord.gg/XRFranq" target = "_blank">
+                        <img src = "assets/img/discord_icon.png">
+                    </a>
+                </div>
             </div>
         </footer>
     </div>
