@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class = "row">
-        <div class="darken-pseudo d-none d-sm-block" id = "test-block-1-large">
+        <div class="darken-pseudo d-none d-sm-block" id = "home-header-large">
             <div id = "overlay-large">
                 <p class = "text-light">
                     At Renaissance Consulting Group, we understand that change is not always easy. 
@@ -17,7 +17,7 @@
                 </p>
             </div>
         </div>
-        <div class="darken-pseudo d-block d-sm-none" id = "test-block-1-small">
+        <div class="darken-pseudo d-block d-sm-none" id = "home-header-small">
             <div id = "overlay-small">
                 <p class = "text-light">
                     At Renaissance Consulting Group, we understand that change is not always easy. 
@@ -27,51 +27,111 @@
             </div>
         </div>
     </div>
-    <div id = "test-block-2" class = "row">
-        <div class = "col">
-            <div class="card-deck">
+    <div id = "cards-row" class = "row">
+        <div class = "col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+            <div class="card">
+                <img class="card-img-top" src="/assets/img/solutions_image_first.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Interim Executives</h5>
+                    <p class="card-text">CxO On Demand Boards and Advisory Boards.</p>
+                </div>
+                <a href="#" class="btn btn-block btn-primary">Learn More</a>
+            </div>
+        </div>
+        <div class = "col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+            <div class="card">
+                <img class="card-img-top" src="/assets/img/solutions_image_second.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title text-center">New Product Marketing</h5>
+                    <p class="card-text">Product and Go To Market Strategy</p>
+                </div>
+                <a href="#" class="btn btn-block btn-primary">Learn More</a>
+            </div>
+        </div>
+        <div class = "col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+            <div class="card">
+                <img class="card-img-top" src="/assets/img/solutions_image_third.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Expert Services</h5>
+                    <p class="card-text">Due Diligence, Market Intelligence, and more...</p>
+                </div>
+                <a href="#" class="btn btn-block btn-primary">Learn More</a>
+            </div>
+        </div>
+    </div>
+    <div id = "mission-block" class = "row">
+        <div id = "mission-block-left" class = "col-4 text-center">
+            <h3>Who We Are:</h3>
+            <p>Technology Innovation Experts</p>
+        </div>
+        <div id = "mission-block-right" class = "col-8">
+            <p>
+                Our team of experts is ready to help you develop strategies for not only surviving, but thriving in the future.  
+                Whether its product innovation, agile engineering practices, or big data analytics, we can help with your transition.
+            </p>
+            <p>
+                Our principals have started, built, bought and sold companies, have invented new technologies and brought them to market, 
+                and have helped more companies than we can count to pivot their products and businesses to success in chaotic markets.  
+            </p>
+            <button class = "btn btn-primary">About Us</button>
+        </div>
+    </div>
+    <div id = "client-block">
+        <div id = "client-header-title" class = "row">
+            <div style = "margin: auto;" class = "col-12 text-center">
+                <h3> Companies we've worked with: </h3>
+            </div>
+        </div>
+        <div class = "client-img-row row">
+            <div class = "client-col col-4">
                 <div class="card">
-                    <img class="card-img-top" src="https://www.exploreminnesota.com/sites/default/files/styles/share_image/public/2019-10/grand-marais-honeymoon-bluff-woman-hiking_roy-son.jpg?h=0c047d17&itok=N8GTdR1p" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <img class = "client-img-card" src="assets/img/silverstorm_logo.jpeg" alt="Card image cap">
+                    <div class="card-body client-card-body">
+                        <h5 class="card-title text-center">Acquired by Dell</h5>
                     </div>
                 </div>
+            </div>
+            <div class = "client-col col-4">
                 <div class="card">
-                    <img class="card-img-top" src="https://www.exploreminnesota.com/sites/default/files/styles/share_image/public/2019-10/grand-marais-honeymoon-bluff-woman-hiking_roy-son.jpg?h=0c047d17&itok=N8GTdR1p" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    <img class = "client-img-card" src="assets/img/rocksoft_logo.jpg" alt="Card image cap">
+                    <div class="card-body client-card-body">
+                        <h5 class="card-title text-center">Acquired by Quantum</h5>
                     </div>
                 </div>
+            </div>
+            <div class = "client-col col-4">
                 <div class="card">
-                    <img class="card-img-top" src="https://www.exploreminnesota.com/sites/default/files/styles/share_image/public/2019-10/grand-marais-honeymoon-bluff-woman-hiking_roy-son.jpg?h=0c047d17&itok=N8GTdR1p" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    <img class = "client-img-card" src="assets/img/net_effect_logo.png" alt="Card image cap">
+                    <div class="card-body client-card-body">
+                        <h5 class="card-title text-center">Acquired by Intel</h5>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class = "row">
+    <div id = "blog-posts-block" class = "row">
         <div class = "col">
-            <div id = "test-block-3"></div>
+            <h4>BLOG POSTS HERE</h4>
         </div>
     </div>
-    <div class = "row">
+    <div id = "contact-us-block" class = "row">
         <div class = "col">
-            <div id = "test-block-4"></div>
-        </div>
-    </div>
-    <div class = "row">
-        <div class = "col">
-            <div id = "test-block-5"></div>
-        </div>
-    </div>
-    <div class = "row">
-        <div class = "col">
-            <div id = "test-block-6"></div>
+            <h3>Contact Us</h3>
+            <form>
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" class="form-control" placeholder="--Your Name Here--">
+                </div>
+                <div class="form-group">
+                    <label>Email address</label>
+                    <input type="email" class="form-control" placeholder="--name@example.com--">
+                </div>
+                <div class="form-group">
+                    <label>Example textarea</label>
+                    <textarea class="form-control" rows="4"></textarea>
+                </div>
+                <button type = "submit" class = "btn btn-block btn-primary">Submit</button>
+            </form>
         </div>
     </div>
 </body>

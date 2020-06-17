@@ -9,7 +9,7 @@
     margin: 0px;
 }
 
-#test-block-1-large
+#home-header-large
 {
     background-image: url("https://www.exploreminnesota.com/sites/default/files/styles/share_image/public/2019-10/grand-marais-honeymoon-bluff-woman-hiking_roy-son.jpg?h=0c047d17&itok=N8GTdR1p");
     width: 100%;
@@ -24,7 +24,7 @@
     align-items: center;
 }
 
-#test-block-1-small
+#home-header-small
 {
     background-image: url("https://www.exploreminnesota.com/sites/default/files/styles/share_image/public/2019-10/grand-marais-honeymoon-bluff-woman-hiking_roy-son.jpg?h=0c047d17&itok=N8GTdR1p");
     width: 100%;
@@ -85,42 +85,112 @@
     font-size: 24px;
 }
 
-#test-block-2
+#cards-row
 {
     background-color: #cbe7eb;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
-.card-deck
+.card
 {
-	margin: auto;
-}
-
-.card-deck .card
-{
+    width: 100%;
+    height: 95%;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
-#test-block-3
+    .card-img-top
+    {
+        height: 260px;
+        border-radius: 0rem;
+    }
+
+    .btn
+    {
+        border-radius: 0rem;
+        background-color: #0073b5;
+        border: 1px solid #0073b5; 
+    }
+
+        .btn:hover
+        {
+            border: 1px solid #0073b5;
+            background-color: white;
+            color: #0073b5;
+        }
+
+#mission-block
 {
-    background-color: green;
+    background-color: #61bfcd;
     height: 450px;
 }
 
-#test-block-4
+    #mission-block-left
+    {
+        margin-top: 5rem;
+    }
+
+        #mission-block-left h3
+        {
+            text-decoration: underline;
+        }
+
+        #mission-block-left p
+        {
+            font-style: italic;
+        }
+
+    #mission-block-right
+    {
+        margin: auto;
+    }
+
+#client-block
 {
-    background-color: blue;
+    background-color: white;
     height: 600px;
 }
 
-#test-block-5
+    #client-header-title
+    {
+        height: 100px;
+        width: 100%;
+    }
+
+    .client-img-row
+    {
+        height: 285px;
+        width: 100%;
+    }
+
+    .client-col
+    {
+        height: 100%;
+        padding: 1rem;
+    }
+
+    .client-img-card
+    {
+        height: 100%;
+        width: 100%;
+    }
+
+    .client-card-body
+    {
+        background-color: #cbe7eb;
+    }
+
+#blog-posts-block
 {
-    background-color: yellow;
+    background-color: #61bfcd;
     height: 450px;
 }
 
-#test-block-6
+#contact-us-block
 {
-    background-color: orange;
+    background-color: #cbe7eb;
     height: 450px;
+    margin-bottom: 10rem;
+    padding: 1rem;
 }

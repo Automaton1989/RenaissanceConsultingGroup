@@ -20,6 +20,7 @@ export class AppComponent {
   title = "RC";
   navbarOpen = false;
   hamburgerOpen = false;
+  dropdownOpen = false;
   session: any;
   admin: any;
 
@@ -56,6 +57,13 @@ export class AppComponent {
   toggleHamburger()
   {
     this.hamburgerOpen = !this.hamburgerOpen;
+  }
+
+  /*  */
+
+  toggleDropdown()
+  {
+    this.dropdownOpen = !this.dropdownOpen;
   }
 
   /* This is for passing session data accross the angular components */

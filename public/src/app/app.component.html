@@ -5,6 +5,9 @@
 <body>
 
 <div class="wrapper">
+
+    <!--
+
     <nav class = "d-none d-sm-block" id="sidebar" [ngClass] = "{ 'active': navbarOpen }">
         <div id="dismiss">
             <i (click) = "toggleNavbar()" class="fa fa-arrow-left fa-align-justify"></i>
@@ -14,16 +17,17 @@
         </div>
         <ul class="list-unstyled components">
 
-        <!--
         <div *ngIf = "session">
             <p style = "margin: 0px; padding-bottom: 0px;">Welcome!</p>
             <p>{{session.username}}</p>
         </div>
 
-        -->
-
         <li [routerLinkActive] = "['active']">
             <a [routerLink] = "['home']">Home</a>
+        </li>
+
+        <li [routerLinkActive] = "['active']">
+            <a> Solutions </a>
         </li>
 
         <li [routerLinkActive] = "['active']">
@@ -34,8 +38,6 @@
             <a> About Us </a>
         </li>
         
-        <!--
-        
         <li [routerLinkActive] = "['active']">
             <a [routerLink] = "['admin']">Admin</a>
         </li>
@@ -45,16 +47,22 @@
             <button style="position: absolute; left: 0; bottom: 0;" class="btn btn-danger btn-block" *ngIf="session" (click) = "logout()">Logout</button>
         </div>
 
-        -->
-
         </ul>
     </nav>
+
+    -->
+
     <div id = "content">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
+
+                <!--
+                    
                 <button (click) = "toggleNavbar()" type="button" id="sidebarNotCollapse" class="btn d-none d-sm-block">
                     <i class="fa fa-arrow-right fa-align-justify"></i>
                 </button>
+
+                -->
                 <button [attr.aria-expanded] = "hamburgerOpen" class="btn btn-dark d-inline-block d-sm-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <i (click) = "toggleHamburger()" class="fa fa-bars fa-align-justify"></i>
                 </button>
@@ -71,11 +79,23 @@
                             <a class="nav-link" [routerLink] = "['home']">Home</a>
                         </li>
 
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" [attr.aria-expanded] = "dropdownOpen" (click) = "toggleDropdown()" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Solutions &#8595;
+                            </a>
+                            <div [ngClass] = "{ 'show': dropdownOpen }" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+
                         <li  class="nav-item" [routerLinkActive] = "['active']">
                             <a class="nav-link">Blog</a>
                         </li>
                         <li class="nav-item" [routerLinkActive] = "['active']">
-                            <a class="nav-link">About Us</a>
+                            <a class="nav-link" [routerLink] = "['about']">About Us</a>
                         </li>
 
                         <!--
