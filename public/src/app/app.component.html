@@ -63,7 +63,7 @@
                 </button>
 
                 -->
-                <button [attr.aria-expanded] = "hamburgerOpen" class="btn btn-dark d-inline-block d-sm-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button [attr.aria-expanded] = "hamburgerOpen" class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <i (click) = "toggleHamburger()" class="fa fa-bars fa-align-justify"></i>
                 </button>
                 <div [ngClass] = "{ 'show': hamburgerOpen }" class="collapse navbar-collapse" id="navbarSupportedContent">
